@@ -1,0 +1,535 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+
+
+  Primary:  - #FCA424
+  secondary   - #0DD39D
+- 
+
+- 
+- Tints:
+- Shades: 
+
+- Accents:
+- Greys
+#1A1A1A
+- #CDCDCD
+- #FEFEFE
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: sans-serif;
+	font-size: 62.5%;
+	color: #1a1a1a;
+}
+
+body {
+	background-color: #fefefe;
+}
+
+.main {
+	max-width: 125rem;
+	margin: 0 auto;
+}
+/* NAVIGATION SECTION */
+.header {
+	background-image: url("./../img/vecteezy_beautiful-blue-mountain-landscape-with-sunrise-and-sunset-in_7162596-1.jpg");
+	z-index: -1;
+	padding: 2.8rem;
+	width: 100%;
+	background-position: center;
+	position: relative;
+}
+
+.camrea {
+	position: absolute;
+	bottom: 3rem;
+	right: 3rem;
+	color: #fff;
+	font-size: 2.2rem;
+	padding: 0.8rem;
+	background-color: rgba(197, 190, 190, 0.2);
+	border-radius: 2px;
+}
+
+.navigation {
+	display: flex;
+	gap: 3.2rem;
+	justify-content: space-between;
+	margin-bottom: 6.4rem;
+}
+.company-name {
+	display: flex;
+	justify-content: center;
+
+	gap: 1.2rem;
+}
+.logo {
+	font-size: 3.2rem;
+	color: #fefefe;
+}
+.nav-header {
+	color: #fefefe;
+	font-size: 1.2rem;
+	margin-top: 0.8rem;
+}
+
+.right {
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	gap: 3rem;
+}
+.nav-btn {
+	height: 3.2rem;
+	width: auto;
+	padding: 1.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	color: #fefefe;
+	background-color: rgba(197, 190, 190, 0.2);
+	border: none;
+	text-transform: uppercase;
+	/* outline: 1px solid #fefefe; */
+}
+
+.nav-img {
+	height: 4rem;
+	width: 4rem;
+	border-radius: 5px;
+	object-fit: cover;
+}
+.notifications {
+	font-size: 2.4rem;
+	margin-top: 6px;
+	color: #fefefe;
+	position: relative;
+}
+
+.notifications::before {
+	content: "";
+	background-color: #fca424;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	border: 1px solid #fff;
+}
+
+/* DETAILS SECTION */
+.details {
+	display: flex;
+	gap: 2.4rem;
+}
+
+.profile-pic {
+	height: 24rem;
+	width: 24rem;
+	border-radius: 5px;
+	transform: translateY(25%);
+	z-index: 9999;
+	opacity: 1;
+	object-fit: cover;
+}
+.name {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	color: #fefefe;
+	font-weight: bold;
+	justify-content: flex-end;
+}
+
+.name p span {
+	font-weight: 500;
+}
+
+.progress {
+	display: flex;
+	gap: 1.2rem;
+	height: 15rem;
+	/* width: 30rem; */
+	gap: 2.4rem;
+	align-items: center;
+	background-color: rgba(197, 190, 190, 0.452);
+	margin-left: auto;
+	border: 1px solid black;
+	opacity: 0.9;
+	border-radius: 7px;
+	padding: 2.4rem 3.2rem;
+	border: none;
+}
+
+.progress-text {
+	margin-left: 1.2rem;
+}
+
+.circle {
+	position: relative;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+	background-color: rgba(205, 205, 205, 0.199);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.4rem;
+	z-index: 1;
+}
+
+.circle::before {
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	width: 100%;
+	height: 100%;
+	padding: 20px; /* Thickness of ring */
+	background: conic-gradient(#777 0deg 90deg, #fca424 90deg 360deg);
+	border-radius: 50%;
+	z-index: -1;
+	-webkit-mask: radial-gradient(
+		farthest-side,
+		transparent calc(100% - 6px),
+		black calc(100% - 6px)
+	);
+	mask: radial-gradient(
+		farthest-side,
+		transparent calc(100% - 6px),
+		black calc(100% - 6px)
+	);
+}
+
+.text1 {
+	font-size: 1.6rem;
+	margin-bottom: 0.4rem;
+	color: #fff;
+	font-weight: bolder;
+}
+.text2 {
+	font-size: 1.2rem;
+	color: #fff;
+	margin-bottom: 1.8rem;
+}
+.complete {
+	text-transform: uppercase;
+	padding: 1.2rem 3.6rem;
+	border-radius: 4px;
+	border: none;
+	color: #fff;
+	background-color: #fca424;
+	transition: all 0.3s;
+}
+
+/*  bottom section */
+
+.main-grid {
+	display: grid;
+	grid-template-columns: 25fr 75fr;
+	max-width: 125rem;
+	margin: 0 auto;
+	padding: 3rem;
+}
+
+.img-circle {
+	width: 5.2rem;
+	height: 5.2rem;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.about-family {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about-family-heading {
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	color: #1a1a1a;
+	font-weight: 500;
+}
+
+.aside {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	border-right: 1px solid #8b8b8b;
+}
+
+.about-family {
+	margin-top: 4rem;
+}
+
+.cover-persons-heading {
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	color: #8b8b8b;
+}
+.cover-persons-img {
+	display: flex;
+	gap: 2rem;
+}
+
+.ion-icon {
+	display: inline-block;
+	margin-right: 3rem;
+	width: 3rem;
+	height: 2.5rem;
+	color: #8b8b8b;
+}
+
+.hr-line {
+	color: #8b8b8b;
+	width: 95%;
+}
+
+.personal-info {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+.personal-info p {
+	font-size: 1.2rem;
+}
+
+.personal-info span {
+	text-transform: uppercase;
+	display: block;
+	color: #8b8b8b;
+	font-size: 1.6rem;
+	margin-bottom: 0.6rem;
+}
+.main-nav {
+	list-style: none;
+	display: inline-flex;
+	gap: 2rem;
+
+	padding-right: 5rem;
+}
+
+.nav {
+	border-bottom: 1px solid #8b8b8b;
+}
+
+.nav-link:link,
+.nav-link:visited {
+	padding: 1rem;
+	text-decoration: none;
+	color: #8b8b8b;
+	position: relative;
+	display: inline-block;
+	padding-left: 2rem; /* Space for icon */
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	transition: width, hight 0.3s ease;
+}
+
+.nav-link:hover {
+	color: #1a1a1a;
+	font-weight: 550;
+	box-shadow: inset 0 -2px 0 #fca424;
+	z-index: 20;
+}
+/* Initial hidden icon */
+.main-nav li a::before {
+	content: "";
+	position: absolute;
+	left: 6%;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	opacity: 0;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: all 0.3s ease;
+}
+
+/* On hover: reveal with grow effect */
+.main-nav li a:hover::before {
+	width: 1rem;
+	height: 1rem;
+	opacity: 1;
+}
+
+/* Different icons for each item */
+.main-nav li:nth-child(1) a::before {
+	background-image: url("https://cdn-icons-png.flaticon.com/512/1946/1946488.png");
+}
+.main-nav li:nth-child(2) a::before {
+	background-image: url("https://cdn-icons-png.flaticon.com/512/1828/1828817.png");
+}
+.main-nav li:nth-child(3) a::before {
+	background-image: url("https://cdn-icons-png.flaticon.com/512/190/190411.png");
+}
+.main-nav li:nth-child(4) a::before {
+	background-image: url("https://cdn-icons-png.flaticon.com/512/1828/1828970.png");
+}
+.main-nav li:nth-child(5) a::before {
+	background-image: url("https://cdn-icons-png.flaticon.com/512/1077/1077063.png");
+}
+.main-nav li:nth-child(6) a::before {
+	background-image: url("https://cdn-icons-png.flaticon.com/512/709/709722.png");
+}
+
+/* BUTTON */
+
+.btn-container {
+	padding: 0.5rem 0.9rem;
+	background-color: #0dd39d;
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	gap: 0.5rem;
+	border-radius: 3px;
+}
+
+.btn {
+	color: #fff;
+}
+
+.btn:link,
+.btn:hover {
+	text-decoration: none;
+}
+
+/* member */
+
+.memebr-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.claim-card {
+	margin: 0 auto;
+	display: flex;
+	gap: 2rem;
+	grid-column: 2 span;
+	padding: 1rem;
+	background-color: #fefefe;
+	/* box-shadow: 10px 10px 10px 10px red ; */
+}
+
+.claim-number {
+	border-right: 1px solid #8b8b8b;
+	padding: 2rem;
+	font-size: 7.2rem;
+}
+
+.claim-info {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.claim-text {
+	text-transform: uppercase;
+	color: #8b8b8b;
+	font-size: 1.8rem;
+}
+
+.claim-img-container {
+	display: flex;
+}
+
+.claim-img-container img {
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	margin-left: -1rem;
+}
+
+.claim-img-container img:last-child::after {
+	background-color: rgba(13, 211, 158, 0.541);
+	content: "23+";
+}
+
+.claim-img-container {
+	display: flex;
+}
+
+.claim-img-wrapper {
+	position: relative; /* Needed for positioning the badge */
+	margin-left: -1rem;
+	width: 2.4rem;
+	height: 2.4rem;
+}
+
+.claim-img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	object-fit: cover;
+}
+
+/* Add badge only to last image wrapper */
+.claim-img-wrapper:last-child::after {
+	height: 2.2rem;
+	width: 2.2rem;
+	content: "+32";
+	position: absolute;
+	top: 0.1rem;
+	right: 1rem;
+	border-radius: 50%;
+	background-color: rgba(13, 211, 158, 0.589);
+	color: white;
+	font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

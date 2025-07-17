@@ -1,9 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Profile Dashboard</title>
+		<link
+			rel="stylesheet"
+			href="./css/style.css"
+		/>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</head>
+	<body>
+		<section class="main">
+			<section class="header">
+				<div class="navigation">
+					<div class="company-name">
+						<ion-icon
+							class="logo"
+							name="logo-wechat"
+						></ion-icon>
+						<h1 class="nav-header">SKS Funding</h1>
+					</div>
+					<div class="right">
+						<button class="nav-btn">Need Help</button>
+						<ion-icon
+							class="notifications"
+							name="notifications-outline"
+						></ion-icon>
+						<img
+							src="./img/hero-mg.jpg"
+							alt="Emma's profile picture"
+							class="nav-img"
+						/>
+					</div>
+				</div>
+
+				<div class="details">
+					<img
+						src="./img/hero-mg.jpg"
+						alt="Emma's profile picture"
+						class="profile-pic"
+					/>
+
+					<div class="name">
+						<h2 class="greet">Hi, Emma! Good Morning 👋</h2>
+						<p class="email"><span>Email -</span> akp.emma237@gmail.com</p>
+						<p class="pno"><span>Phone -</span> +91 88937584843</p>
+						<p class="address">
+							<span>Address -</span> xyz street 2013, London, NJ 0706 USA
+						</p>
+						<p class="plan"><span>Plan -</span>$100</p>
+						<p class="date"><span>Joined - </span> Mon, 22nd Feb 2019</p>
+					</div>
+
+					<div class="progress">
+						<div class="circle">
+							<span>75%</span>
+						</div>
+						<div class="progress-text">
+							<p class="text1">Profile Completion</p>
+							<p class="text2">Please complete your profile</p>
+							<button class="complete">Complete</button>
+						</div>
+					</div>
+					<ion-icon
+						class="camrea"
+						name="camera-outline"
+					></ion-icon>
+				</div>
+			</section>
+
+			<section class="main-grid">
+				<aside class="aside">
+					<div class="about-family">
+						<h3 class="about-family-heading">about my family</h3>
+						<ion-icon
+							class="ion-icon"
+							name="ellipsis-horizontal-outline"
+						></ion-icon>
+					</div>
+
+					<hr class="hr-line" />
+
+					<p class="cover-persons-heading">coverd persons</p>
+					<div class="cover-persons-img">
+						<img
+							class="img-circle"
+							src="https://randomuser.me/api/portraits/women/44.jpg"
+							alt=""
+						/>
+						<img
+							class="img-circle"
+							src="https://randomuser.me/api/portraits/women/45.jpg"
+							alt=""
+						/>
+					</div>
+
+					<p class="cover-persons-heading">beneficiary persons</p>
+					<div class="cover-persons-img">
+						<img
+							class="img-circle"
+							src="https://randomuser.me/api/portraits/women/13.jpg"
+							alt=""
+						/>
+						<img
+							class="img-circle"
+							src="https://randomuser.me/api/portraits/women/15.jpg"
+							alt=""
+						/>
+						<img
+							class="img-circle"
+							src="https://randomuser.me/api/portraits/women/29.jpg"
+							alt=""
+						/>
+					</div>
+
+					<p class="cover-persons-heading">emergency persons</p>
+					<div class="cover-persons-img">
+						<img
+							class="img-circle"
+							src="https://randomuser.me/api/portraits/women/39.jpg"
+							alt=""
+						/>
+						<img
+							class="img-circle"
+							src="https://randomuser.me/api/portraits/women/38.jpg"
+							alt=""
+						/>
+
+						<img
+							class="img-circle"
+							src="https://randomuser.me/api/portraits/women/36.jpg"
+							alt=""
+						/>
+						<img
+							class="img-circle"
+							src="https://randomuser.me/api/portraits/women/40.jpg"
+							alt=""
+						/>
+					</div>
+
+					<div class="about-family">
+						<h3 class="about-family-heading">about me</h3>
+						<ion-icon
+							class="ion-icon"
+							name="ellipsis-horizontal-outline"
+						></ion-icon>
+					</div>
+
+					<hr class="hr-line" />
+
+					<div class="personal-info">
+						<p class="email"><span>Email </span> akp.emma237@gmail.com</p>
+						<p class="pno"><span>Phone </span> +91 88937584843</p>
+						<p class="address">
+							<span>Address </span> xyz street 2013, London, NJ 0706 USA
+						</p>
+						<p class="plan"><span>Plan </span>$100</p>
+						<p class="date"><span>Joined </span> Mon, 22nd Feb 2019</p>
+					</div>
+				</aside>
+				<main class="main-display">
+					<div class="nav">
+						<ul class="main-nav">
+							<li>
+								<a
+									class="nav-link"
+									href="#"
+								>
+									Dashboard
+								</a>
+							</li>
+
+							<li>
+								<a
+									class="nav-link"
+									href="#"
+									>New Claims</a
+								>
+							</li>
+							<li>
+								<a
+									class="nav-link"
+									href="#"
+									>Completed Claims</a
+								>
+							</li>
+							<li>
+								<a
+									class="nav-link"
+									href="#"
+									>Past Claims</a
+								>
+							</li>
+							<li>
+								<a
+									class="nav-link"
+									href="#"
+									>Member</a
+								>
+							</li>
+							<li>
+								<a
+									class="nav-link"
+									href="#"
+									>My Claims</a
+								>
+							</li>
+						</ul>
+						<div class="btn-container">
+							<ion-icon name="cash-outline"></ion-icon>
+							<a
+								class="btn"
+								href=""
+							>
+								CLAIM
+							</a>
+						</div>
+					</div>
+
+					<div class="memebr-grid">
+						<div class="claim-card">
+							<div class="claim-number">23</div>
+							<div class="claim-info">
+								<p class="claim-text">new claims</p>
+								<div class="claim-img-container">
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/1.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/2.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/3.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/4.jpg"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="claim-card">
+							<div class="claim-number">76</div>
+							<div class="claim-info">
+								<p class="claim-text">new members</p>
+								<div class="claim-img-container">
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/1.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/2.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/3.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/4.jpg"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="claim-card">
+							<div class="claim-number">102</div>
+							<div class="claim-info">
+								<p class="claim-text">Total claims</p>
+								<div class="claim-img-container">
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/1.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/2.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/3.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="claim-img-wrapper">
+										<img
+											class="claim-img"
+											src="https://randomuser.me/api/portraits/women/4.jpg"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+            <div class="user-card">
+                <div class="user-img-container">
+                  <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="">
+                </div>
+                <div>
+                    <h4>amela kimani</h4>
+                    <div>
+                      <ion-icon class="user-info-icon" name="calendar-outline"></ion-icon>
+                      <p class=""></p>
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+            
+
+
+
+
+					</div>
+				</main>
+			</section>
+		</section>
+	</body>
 </html>
