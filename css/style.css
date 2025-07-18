@@ -58,6 +58,7 @@ Medium: 11px
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: sans-serif;
 }
 html {
 	font-family: sans-serif;
@@ -98,7 +99,7 @@ body {
 	display: flex;
 	gap: 3.2rem;
 	justify-content: space-between;
-	margin-bottom: 6.4rem;
+	margin-bottom: 3.2rem;
 }
 .company-name {
 	display: flex;
@@ -168,6 +169,10 @@ body {
 	gap: 2.4rem;
 }
 
+.greet {
+	font-size: 2rem;
+}
+
 .profile-pic {
 	height: 24rem;
 	width: 24rem;
@@ -182,8 +187,9 @@ body {
 	flex-direction: column;
 	gap: 2rem;
 	color: #fefefe;
-	font-weight: bold;
+	font-weight: 550;
 	justify-content: flex-end;
+	font-size: 1rem;
 }
 
 .name p span {
@@ -352,10 +358,13 @@ body {
 .main-nav {
 	list-style: none;
 	display: inline-flex;
-	gap: 2rem;
-
+	gap: 1rem;
 	padding-right: 5rem;
 }
+
+	.main-nav:hover {
+		gap: 0.8rem;
+	}
 
 .nav {
 	border-bottom: 1px solid #8b8b8b;
@@ -363,7 +372,7 @@ body {
 
 .nav-link:link,
 .nav-link:visited {
-	padding: 1rem;
+	padding: 1.1rem;
 	text-decoration: none;
 	color: #8b8b8b;
 	position: relative;
@@ -371,7 +380,7 @@ body {
 	padding-left: 2rem; /* Space for icon */
 	font-size: 1.2rem;
 	text-transform: uppercase;
-	transition: width, hight 0.3s ease;
+	transition: width, hight border 0.3s ease;
 }
 
 .nav-link:hover {
@@ -426,7 +435,6 @@ body {
 
 .btn-container {
 	padding: 0.5rem 0.9rem;
-	background-color: #0dd39d;
 	text-align: center;
 	display: inline-flex;
 	justify-content: center;
@@ -448,22 +456,46 @@ body {
 .memebr-grid {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
+	gap: 2rem;
+	padding: 2rem 0 0 2rem;
+}
+
+.cliam-card-wraper {
+	grid-column: 6 span;
+	display: flex;
+	gap: 2rem;
+}
+.card-container-wraper {
+	grid-column: 4 span;
+	display: flex;
+	gap: 2rem;
+	flex-direction: column;
+}
+
+.aside-class-wraper {
+	grid-column: 2 span;
 }
 
 .claim-card {
 	margin: 0 auto;
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	gap: 2rem;
 	grid-column: 2 span;
 	padding: 1rem;
 	background-color: #fefefe;
+	/* background-color: #fff; */
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	/* box-shadow: 10px 10px 10px 10px red ; */
+	width: 100%;
 }
 
 .claim-number {
 	border-right: 1px solid #8b8b8b;
 	padding: 2rem;
-	font-size: 7.2rem;
+	font-size: 5.2rem;
+	font-family: "IBM Plex Mono";
 }
 
 .claim-info {
@@ -477,7 +509,8 @@ body {
 .claim-text {
 	text-transform: uppercase;
 	color: #8b8b8b;
-	font-size: 1.8rem;
+	font-size: 1.2rem;
+	text-wrap: nowrap;
 }
 
 .claim-img-container {
@@ -528,8 +561,178 @@ body {
 	background-color: rgba(13, 211, 158, 0.589);
 	color: white;
 	font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.card {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	width: 100%;
+	grid-column: 4 span;
+	padding: 2rem;
+}
+
+.card-profile-img {
+	width: 12rem;
+	height: 12rem;
+	border-radius: 5px;
+	object-fit: cover;
+	margin-right: 20px;
+}
+.card-content {
+	flex: 1;
+
+	gap: 1rem;
+}
+.card-content h2 {
+	margin: 0 0 10px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #333;
+	font-family: "IBM Plex Mono";
+	font-weight: 550;
+}
+.card-content p {
+	margin: 6px 0;
+	color: #cdcdcd;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.card-content p ion-icon {
+	margin-right: 8px;
+	font-size: 16px;
+	color: #cdcdcd;
+}
+
+.card-content p span {
+	color: #555;
+}
+.pay-button-container {
+	margin-left: auto;
+	background-color: #ffa500;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+.pay-button-container a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+.pay-button-container a ion-icon {
+	margin-right: 5px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.nav .btn-container .pay-button-container {
+	background-color: #22c55e;
+}
+.aside-card {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	overflow-y: auto;
+	min-height: 100%;
+	position: relative;
+	grid-row: 3 span;
+	max-height: 50rem;
+}
+
+.aside-card h3 {
+	margin: 0 0 15px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #aaa;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+
+.timeline {
+	position: relative;
+	padding-left: 30px;
+}
+
+.timeline::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 14px;
+	width: 2px;
+	height: 100%;
+	background-color: #eee;
+}
+
+.activity {
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+.activity::before {
+	content: "";
+	position: absolute;
+	left: -20px;
+	top: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ccc;
+	z-index: 1;
+}
+
+.activity.blue::before {
+	background-color: #2a9df4;
+	box-shadow: 0 0 10px rgb(42, 156, 244);
+}
+
+.activity.orange::before {
+	background-color: #ffa500;
+	box-shadow: 0 0 10px #ffb100;
+}
+
+.activity.green::before {
+	background-color: #22c55e;
+	box-shadow: 0 0 10px #22c55e;
+}
+
+.activity h4 {
+	margin: 0;
+	font-size: 14px;
+	color: #111;
+	font-weight: 500;
+}
+
+.activity p {
+	margin: 5px 0 0;
+	font-size: 13px;
+	color: #aaa;
+}
+
+.activity .time {
+	margin-top: 4px;
+	font-size: 12px;
+	color: #aaa;
+}
+
+.aside-card::-webkit-scrollbar {
+	width: 4px;
+}
+
+.aside-card::-webkit-scrollbar-thumb {
+	background-color: #ffa500;
+	border-radius: 10px;
+}
+.aside-card::-webkit-scrollbar {
+	height: 1rem;
 }

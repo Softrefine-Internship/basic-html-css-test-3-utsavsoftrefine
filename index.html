@@ -19,10 +19,23 @@
 			nomodule
 			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
 		></script>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<section class="main">
-			<section class="header">
+			<div class="header">
 				<div class="navigation">
 					<div class="company-name">
 						<ion-icon
@@ -78,7 +91,7 @@
 						name="camera-outline"
 					></ion-icon>
 				</div>
-			</section>
+			</div>
 
 			<section class="main-grid">
 				<aside class="aside">
@@ -219,151 +232,270 @@
 							</li>
 						</ul>
 						<div class="btn-container">
-							<ion-icon name="cash-outline"></ion-icon>
-							<a
-								class="btn"
-								href=""
-							>
-								CLAIM
-							</a>
+							<div class="pay-button-container">
+								<a href="#"><ion-icon name="cash-outline"></ion-icon> CLIAM</a>
+							</div>
 						</div>
 					</div>
 
 					<div class="memebr-grid">
-						<div class="claim-card">
-							<div class="claim-number">23</div>
-							<div class="claim-info">
-								<p class="claim-text">new claims</p>
-								<div class="claim-img-container">
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/1.jpg"
-											alt=""
-										/>
+						<div class="cliam-card-wraper">
+							<div class="claim-card">
+								<div class="claim-number">23</div>
+								<div class="claim-info">
+									<p class="claim-text">new claims</p>
+									<div class="claim-img-container">
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/1.jpg"
+												alt=""
+											/>
+										</div>
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/2.jpg"
+												alt=""
+											/>
+										</div>
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/3.jpg"
+												alt=""
+											/>
+										</div>
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/4.jpg"
+												alt=""
+											/>
+										</div>
 									</div>
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/2.jpg"
-											alt=""
-										/>
+								</div>
+							</div>
+
+							<div class="claim-card">
+								<div class="claim-number">76</div>
+								<div class="claim-info">
+									<p class="claim-text">new members</p>
+									<div class="claim-img-container">
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/1.jpg"
+												alt=""
+											/>
+										</div>
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/2.jpg"
+												alt=""
+											/>
+										</div>
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/3.jpg"
+												alt=""
+											/>
+										</div>
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/4.jpg"
+												alt=""
+											/>
+										</div>
 									</div>
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/3.jpg"
-											alt=""
-										/>
-									</div>
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/4.jpg"
-											alt=""
-										/>
+								</div>
+							</div>
+
+							<div class="claim-card">
+								<div class="claim-number text-sm">102</div>
+								<div class="claim-info">
+									<p class="claim-text">Total claims</p>
+									<div class="claim-img-container">
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/1.jpg"
+												alt=""
+											/>
+										</div>
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/2.jpg"
+												alt=""
+											/>
+										</div>
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/3.jpg"
+												alt=""
+											/>
+										</div>
+										<div class="claim-img-wrapper">
+											<img
+												class="claim-img"
+												src="https://randomuser.me/api/portraits/women/4.jpg"
+												alt=""
+											/>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="claim-card">
-							<div class="claim-number">76</div>
-							<div class="claim-info">
-								<p class="claim-text">new members</p>
-								<div class="claim-img-container">
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/1.jpg"
-											alt=""
-										/>
-									</div>
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/2.jpg"
-											alt=""
-										/>
-									</div>
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/3.jpg"
-											alt=""
-										/>
-									</div>
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/4.jpg"
-											alt=""
-										/>
-									</div>
+						<div class="card-container-wraper">
+							<div class="card">
+								<img
+									src="https://randomuser.me/api/portraits/women/25.jpg"
+									alt="Profile Picture"
+									class="card-profile-img"
+								/>
+								<div class="card-content">
+									<h2>Amelia Kimani</h2>
+									<p>
+										<ion-icon name="calendar-outline"></ion-icon>
+										<span>Filed - </span>Thu, Jul 10, 2018 7:30 PM EDT
+									</p>
+									<p>
+										<ion-icon name="calendar-outline"></ion-icon
+										><span> Due - </span> Wed, Jul 23, 2019 12:30 PM
+									</p>
+									<p>
+										<ion-icon name="location-outline"></ion-icon
+										><span> Address - </span>
+										Hillside Rd, Hiranandani...
+									</p>
+								</div>
+								<div class="pay-button-container">
+									<a href="#"><ion-icon name="card-outline"></ion-icon> PAY</a>
+								</div>
+							</div>
+
+							<div class="card">
+								<img
+									src="https://randomuser.me/api/portraits/women/31.jpg"
+									alt="Profile Picture"
+									class="card-profile-img"
+								/>
+								<div class="card-content">
+									<h2>GenviEVE juma</h2>
+									<p>
+										<ion-icon name="calendar-outline"></ion-icon>
+										<span>Filed - </span>Thu, Jul 10, 2018 7:30 PM EDT
+									</p>
+									<p>
+										<ion-icon name="calendar-outline"></ion-icon
+										><span> Due - </span> Wed, Jul 23, 2019 12:30 PM
+									</p>
+									<p>
+										<ion-icon name="location-outline"></ion-icon
+										><span> Address - </span>
+										Hillside Rd, Hiranandani...
+									</p>
+								</div>
+								<div class="pay-button-container">
+									<a href="#"><ion-icon name="card-outline"></ion-icon> PAY</a>
+								</div>
+							</div>
+
+							<div class="card">
+								<img
+									src="https://randomuser.me/api/portraits/women/3.jpg"
+									alt="Profile Picture"
+									class="card-profile-img"
+								/>
+								<div class="card-content">
+									<h2>theodore wachira</h2>
+									<p>
+										<ion-icon name="calendar-outline"></ion-icon>
+										<span>Filed - </span>Thu, Jul 10, 2018 7:30 PM EDT
+									</p>
+									<p>
+										<ion-icon name="calendar-outline"></ion-icon
+										><span> Due - </span> Wed, Jul 23, 2019 12:30 PM
+									</p>
+									<p>
+										<ion-icon name="location-outline"></ion-icon
+										><span> Address - </span>
+										Hillside Rd, Hiranandani...
+									</p>
+								</div>
+								<div class="pay-button-container">
+									<a href="#"><ion-icon name="card-outline"></ion-icon> PAY</a>
 								</div>
 							</div>
 						</div>
 
-						<div class="claim-card">
-							<div class="claim-number">102</div>
-							<div class="claim-info">
-								<p class="claim-text">Total claims</p>
-								<div class="claim-img-container">
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/1.jpg"
-											alt=""
-										/>
-									</div>
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/2.jpg"
-											alt=""
-										/>
-									</div>
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/3.jpg"
-											alt=""
-										/>
-									</div>
-									<div class="claim-img-wrapper">
-										<img
-											class="claim-img"
-											src="https://randomuser.me/api/portraits/women/4.jpg"
-											alt=""
-										/>
+							<div class="aside-class-wraper">
+								<div class="aside-card">
+									<h3>ACTIVITY</h3>
+									<div class="timeline">
+										<div class="activity blue">
+											<h4>Claimed $2000</h4>
+											<p>23 members are got claimed in washington DC</p>
+											<div class="time">05:40pm</div>
+										</div>
+
+										<div class="activity orange">
+											<h4>102 New Members</h4>
+											<p>
+												We have 102 registrations<br />check out their profiles
+											</p>
+											<div class="time">05:40pm</div>
+										</div>
+
+										<div class="activity green">
+											<h4>3 Claims are waiting</h4>
+											<p>
+												Please contribute them, they are<br />Waiting for your
+												help
+											</p>
+											<div class="time">05:40pm</div>
+										</div>
+
+										<div class="activity blue">
+											<h4>102 New Members</h4>
+											<p>
+												We have 102 registrations<br />check out their profiles
+											</p>
+											<div class="time">05:40pm</div>
+										</div>
+
+											<div class="activity orange">
+											<h4>102 New Members</h4>
+											<p>
+												We have 102 registrations<br />check out their profiles
+											</p>
+											<div class="time">05:40pm</div>
+										</div>
+
+											<div class="activity green">
+											<h4>102 New Members</h4>
+											<p>
+												We have 102 registrations<br />check out their profiles
+											</p>
+											<div class="time">05:40pm</div>
+										</div>
+
+											<div class="activity blue">
+											<h4>102 New Members</h4>
+											<p>
+												We have 102 registrations<br />check out their profiles
+											</p>
+											<div class="time">05:40pm</div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-
-
-
-            <div class="user-card">
-                <div class="user-img-container">
-                  <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="">
-                </div>
-                <div>
-                    <h4>amela kimani</h4>
-                    <div>
-                      <ion-icon class="user-info-icon" name="calendar-outline"></ion-icon>
-                      <p class=""></p>
-                    </div>
-                </div>
-
-                <div>
-
-                </div>
-            </div>
-            
-
-
-
-
 					</div>
 				</main>
 			</section>
