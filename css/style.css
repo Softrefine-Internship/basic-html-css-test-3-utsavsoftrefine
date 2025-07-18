@@ -583,32 +583,31 @@ body {
 	height: 12rem;
 	border-radius: 5px;
 	object-fit: cover;
-	margin-right: 20px;
+	margin-right: 2rem;
 }
 .card-content {
 	flex: 1;
-
 	gap: 1rem;
 }
 .card-content h2 {
-	margin: 0 0 10px;
-	font-size: 18px;
+	margin: 0 0 1rem;
+	font-size: 1.8rem;
 	text-transform: uppercase;
 	color: #333;
 	font-family: "IBM Plex Mono";
 	font-weight: 550;
 }
 .card-content p {
-	margin: 6px 0;
+	margin: 0.6rem 0;
 	color: #cdcdcd;
-	font-size: 14px;
+	font-size: 1.4rem;
 	display: flex;
 	align-items: center;
 	width: 100%;
 }
 .card-content p ion-icon {
-	margin-right: 8px;
-	font-size: 16px;
+	margin-right: 0.8rem;
+	font-size: 1.6rem;
 	color: #cdcdcd;
 }
 
@@ -618,7 +617,7 @@ body {
 .pay-button-container {
 	margin-left: auto;
 	background-color: #ffa500;
-	padding: 10px 15px;
+	padding: 1rem 1.5rem;
 	border-radius: 5px;
 }
 .pay-button-container a {
@@ -629,8 +628,8 @@ body {
 	align-items: center;
 }
 .pay-button-container a ion-icon {
-	margin-right: 5px;
-	font-size: 16px;
+	margin-right: 0.5rem;
+	font-size: 1.6rem;
 	color: #fff;
 }
 
@@ -640,8 +639,8 @@ body {
 .aside-card {
 	background: #fff;
 	border-radius: 10px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-	padding: 20px;
+	box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+	padding: 2rem;
 	overflow-y: auto;
 	min-height: 100%;
 	position: relative;
@@ -650,17 +649,17 @@ body {
 }
 
 .aside-card h3 {
-	margin: 0 0 15px;
-	font-size: 16px;
+	margin: 0 0 1.5rem;
+	font-size: 1.6rem;
 	font-weight: 500;
 	color: #aaa;
 	border-bottom: 1px solid #eee;
-	padding-bottom: 10px;
+	padding-bottom: 1rem;
 }
 
 .timeline {
 	position: relative;
-	padding-left: 30px;
+	padding-left: 3rem;
 }
 
 .timeline::before {
@@ -675,17 +674,17 @@ body {
 
 .activity {
 	position: relative;
-	padding-left: 20px;
-	margin-bottom: 20px;
+	padding-left: 2rem;
+	margin-bottom: 2rem;
 }
 
 .activity::before {
 	content: "";
 	position: absolute;
-	left: -20px;
-	top: 5px;
-	width: 10px;
-	height: 10px;
+	left: -2rem;
+	top: 0.5rem;
+	width: 1rem;
+	height: 1rem;
 	border-radius: 50%;
 	background-color: #ccc;
 	z-index: 1;
@@ -693,45 +692,45 @@ body {
 
 .activity.blue::before {
 	background-color: #2a9df4;
-	box-shadow: 0 0 10px rgb(42, 156, 244);
+	box-shadow: 0 0 1rem rgb(42, 156, 244);
 }
 
 .activity.orange::before {
 	background-color: #ffa500;
-	box-shadow: 0 0 10px #ffb100;
+	box-shadow: 0 0 1rem #ffb100;
 }
 
 .activity.green::before {
 	background-color: #22c55e;
-	box-shadow: 0 0 10px #22c55e;
+	box-shadow: 0 0 1rem #22c55e;
 }
 
 .activity h4 {
 	margin: 0;
-	font-size: 14px;
+	font-size: 1.4rem;
 	color: #111;
 	font-weight: 500;
 }
 
 .activity p {
-	margin: 5px 0 0;
-	font-size: 13px;
+	margin: 0.5rem 0 0;
+	font-size: 1.3rem;
 	color: #aaa;
 }
 
 .activity .time {
-	margin-top: 4px;
-	font-size: 12px;
+	margin-top: 0.4rem;
+	font-size: 1.2rem;
 	color: #aaa;
 }
 
 .aside-card::-webkit-scrollbar {
-	width: 4px;
+	width: 0.4rem;
 }
 
 .aside-card::-webkit-scrollbar-thumb {
 	background-color: #ffa500;
-	border-radius: 10px;
+	border-radius: 1rem;
 }
 .aside-card::-webkit-scrollbar {
 	height: 1rem;
