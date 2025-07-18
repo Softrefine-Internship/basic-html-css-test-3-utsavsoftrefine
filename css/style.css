@@ -358,7 +358,6 @@ body {
 .main-nav {
 	list-style: none;
 	display: inline-flex;
-	gap: 1rem;
 	padding-right: 5rem;
 }
 
